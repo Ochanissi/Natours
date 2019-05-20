@@ -4,8 +4,9 @@
 900 - 1200px     Table Landscape
 1200 - 1800 is where our normal styles apply
 1800px +     Big Desktop
-*/
-/*
+
+---------------------------------
+
 $breakpoint argument choices:
 - phone
 - tab-port
@@ -51,15 +52,18 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.26em) {
+    html {
+      font-size: 10%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
-  @media (max-width: 600px) {
-    body {
-      font-size: 50px; } }
-  @media (max-width: 37.5em) {
-    body {
-      font-size: 50%; } }
 
 body {
   font-family: "Lato", sans-serif;

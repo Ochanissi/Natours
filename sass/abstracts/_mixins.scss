@@ -20,13 +20,9 @@
 900 - 1200px     Table Landscape
 1200 - 1800 is where our normal styles apply
 1800px +     Big Desktop
-*/
 
-@mixin respond-phone {
-    @media (max-width: 600px) { @content };
-}
+---------------------------------
 
-/*
 $breakpoint argument choices:
 - phone
 - tab-port
