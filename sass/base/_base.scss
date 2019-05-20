@@ -13,4 +13,12 @@ html {
 
 body {
     box-sizing: border-box;
+
+    @include respond-phone {
+        font-size: 50px;
+    }
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
 }
