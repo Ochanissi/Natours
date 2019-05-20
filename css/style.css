@@ -1,3 +1,19 @@
+/*
+0 - 600px   Phone
+600 - 900px     Table Portrait
+900 - 1200px     Table Landscape
+1200 - 1800 is where our normal styles apply
+1800px +     Big Desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -38,6 +54,12 @@ html {
 
 body {
   box-sizing: border-box; }
+  @media (max-width: 600px) {
+    body {
+      font-size: 50px; } }
+  @media (max-width: 37.5em) {
+    body {
+      font-size: 50%; } }
 
 body {
   font-family: "Lato", sans-serif;
