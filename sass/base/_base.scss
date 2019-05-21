@@ -15,7 +15,7 @@ html {
     }
 
     @include respond(tab-port) { // width < 900
-        font-size: 10%; // 1rem = 8px; 8/16 = 50%
+        font-size: 50%; // 1rem = 8px; 8/16 = 50%
     }
 
     @include respond(big-desktop) { // width > 1800
@@ -25,4 +25,9 @@ html {
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
