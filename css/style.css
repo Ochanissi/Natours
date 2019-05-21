@@ -624,6 +624,9 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.26em) {
+      .popup__right {
+        padding: 3rem 3rem; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -640,6 +643,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 56.26em) {
+      .popup__text {
+        margin-bottom: 4rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
