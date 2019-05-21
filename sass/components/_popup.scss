@@ -22,11 +22,24 @@
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
 
+        @include respond(phone) {
+            // display: block;
+
+        }
+
     }
 
     &__left {
         width: 33.3333333%;
         display: table-cell;
+        
+
+        @include respond(phone) {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin-top: 3rem;
+        }
 
 
     }
@@ -36,9 +49,15 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        text-align: center;
 
         @include respond(tab-port) {
             padding: 3rem 3rem;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            display: block;
         }
     }
 
@@ -47,6 +66,16 @@
         width: 100%;
 
 
+        @include respond(phone) {
+            width: 35%;
+            display: inline-block;
+            // width: calc((100% - #{$gutter-horizontal}) / 2);
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+
+        }
     }
 
     &__text {
@@ -65,9 +94,14 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+        text-align: left;
 
         @include respond(tab-port) {
             margin-bottom: 4rem;
+        }
+
+        @include respond(phone) {
+
         }
     }
     
